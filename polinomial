@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket Soal TKA Matematika Lanjutan - Polinomial (Versi Guru)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi MathJax untuk memastikan rendering LaTeX -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .question-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+        @media (min-width: 768px) {
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .option {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+         .option:hover {
+            border-color: #4f46e5;
+            background-color: #eef2ff;
+        }
+        .table-auto th, .table-auto td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-700">Soal Analisis Kemampuan Akademik Guru</h1>
+            <p class="text-gray-600 mt-2">Topik: Analisis Konsep Polinomial</p>
+        </header>
+
+        <main>
+            <!-- Tipe 1a: Pilihan Ganda -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-4">Tipe 1a: Pilihan Ganda (Satu Jawaban Benar)</h3>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">1. Diketahui polinomial $P(x) = x^3 - 2x^2 + ax + b$. Jika $P(x)$ dibagi oleh $(x^2 - x - 2)$ bersisa $(3x + 4)$, maka nilai dari $a+b$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. 5</div><div class="option">B. 6</div><div class="option">C. 7</div><div class="option">D. 8</div><div class="option">E. 9</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">2. Polinomial $P(x) = 2x^3 - 11x^2 + 17x - 6$ memiliki sepasang akar yang saling berkebalikan. Faktor linear yang <strong>BUKAN</strong> merupakan bagian dari pasangan akar tersebut adalah...</p>
+                    <div class="options-grid"><div class="option">A. $(x-1)$</div><div class="option">B. $(x+2)$</div><div class="option">C. $(x-3)$</div><div class="option">D. $(2x-1)$</div><div class="option">E. $(x-2)$</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">3. Jika polinomial $P(x)$ berderajat 3 habis dibagi oleh $(x-1)$ dan $(x+2)$, serta $P(0) = 4$ dan $P(-1)=8$, maka sisa pembagian $P(x)$ oleh $(x^2-4)$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. $-8x+16$</div><div class="option">B. $4x-8$</div><div class="option">C. $-4x-8$</div><div class="option">D. $2x+4$</div><div class="option">E. $-2x-4$</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">4. Jika polinomial $P(x) = x^4 - ax^3 + bx^2 - 8x + 4$ habis dibagi oleh $(x-2)^2$, maka nilai $a+b$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. 10</div><div class="option">B. 12</div><div class="option">C. 14</div><div class="option">D. 16</div><div class="option">E. 18</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">5. Suku banyak $f(x)$ dibagi $(x^2-1)$ bersisa $(2x+1)$ dan dibagi $(x^2-4)$ bersisa $(x+3)$. Sisa pembagian $f(x)$ oleh $(x^2-3x+2)$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. $x+2$</div><div class="option">B. $2x+1$</div><div class="option">C. $3x-1$</div><div class="option">D. $4x-1$</div><div class="option">E. $5x-2$</div></div>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-4">6. Jika akar-akar persamaan $x^3 - 4x^2 + x - 2 = 0$ adalah $\alpha, \beta, \gamma$, maka persamaan polinomial baru yang akar-akarnya $(\alpha+1), (\beta+1), (\gamma+1)$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. $y^3-7y^2+12y-8=0$</div><div class="option">B. $y^3-y^2-6y+6=0$</div><div class="option">C. $y^3-7y^2-8y+12=0$</div><div class="option">D. $y^3-y^2+6y-6=0$</div><div class="option">E. $y^3+y^2-6y+6=0$</div></div>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-4">7. Polinomial $P(x) = x^4 - 2x^3 - 3x^2 + ax + b$ jika dibagi oleh $(x-1)^2$ bersisa $(2x-1)$. Nilai dari $a-b$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. -10</div><div class="option">B. -5</div><div class="option">C. 10</div><div class="option">D. 12</div><div class="option">E. 15</div></div>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-4">8. Suatu polinomial $P(x)$, jika dibagi $(x^2+1)$ bersisa $(2x-3)$ dan jika dibagi $(x^2-1)$ bersisa $(x+2)$. Sisa pembagian $P(x)$ oleh $(x^4-1)$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. $\frac{1}{2}x^3 + \frac{5}{2}x^2 + \frac{3}{2}x - \frac{1}{2}$</div><div class="option">B. $-\frac{1}{2}x^3 - \frac{5}{2}x^2 + \frac{3}{2}x + \frac{1}{2}$</div><div class="option">C. $-\frac{1}{2}x^3 + \frac{5}{2}x^2 + \frac{3}{2}x - \frac{1}{2}$</div><div class="option">D. $x^3 + 5x^2 + 3x - 1$</div><div class="option">E. $-x^3 + 5x^2 + 3x - 1$</div></div>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-4">9. Persamaan polinomial $x^4 - 8x^3 + ax^2 - bx + c = 0$ memiliki akar-akar yang membentuk deret aritmatika dengan beda 2. Nilai dari $c$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. -105</div><div class="option">B. -15</div><div class="option">C. 15</div><div class="option">D. 25</div><div class="option">E. 105</div></div>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-4">10. Jika $\frac{4x^2-x+3}{(x-1)(x^2+1)} = \frac{A}{x-1} + \frac{Bx+C}{x^2+1}$, maka nilai dari $A-B+C$ adalah...</p>
+                    <div class="options-grid"><div class="option">A. 0</div><div class="option">B. 1</div><div class="option">C. 2</div><div class="option">D. 3</div><div class="option">E. 4</div></div>
+                </div>
+            </div>
+
+            <!-- Tipe 1b: Kecukupan Data -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-4">Tipe 1b: Pilihan Ganda (Kecukupan Data)</h3>
+                <div class="p-4 bg-indigo-50 border border-indigo-200 rounded-lg mb-6 text-sm">
+                     <p class="font-bold">Petunjuk:</p>
+                    <ul class="list-disc list-inside ml-2">
+                        <li><b>A.</b> Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</li>
+                        <li><b>B.</b> Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</li>
+                        <li><b>C.</b> DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.</li>
+                        <li><b>D.</b> Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.</li>
+                        <li><b>E.</b> Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan.</li>
+                    </ul>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">11. Apakah polinomial $P(x) = x^3 + ax^2 + bx + c$ habis dibagi $(x^2-1)$?</p>
+                    <div class="mt-4 space-y-2 pl-4"><p>(1) $a+c = 0$</p><p>(2) $1+b=0$</p></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">12. Berapakah nilai $a$ pada polinomial $P(x) = x^3 - 3x + a$?</p>
+                    <div class="mt-4 space-y-2 pl-4"><p>(1) $P(x)$ memiliki akar kembar.</p><p>(2) Sisa pembagian $P(x)$ oleh $(x-2)$ adalah 4.</p></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">13. Apakah semua akar dari $P(x) = x^3 - 7x^2 + ax - 8$ adalah real dan positif?</p>
+                    <div class="mt-4 space-y-2 pl-4"><p>(1) Salah satu akarnya adalah 1.</p><p>(2) $P(x)$ <strong>TIDAK</strong> memiliki akar negatif.</p></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">14. Berapakah sisa pembagian polinomial $P(x)$ oleh $(x^2-4)$?</p>
+                    <div class="mt-4 space-y-2 pl-4"><p>(1) Sisa pembagian $P(x)$ oleh $(x-2)$ adalah 5.</p><p>(2) $P(-2) = -P(2) + 6$.</p></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">15. Apakah polinomial $P(x) = x^4+2x^3-x^2+ax+b$ memiliki faktor kembar (akar ganda)?</p>
+                    <div class="mt-4 space-y-2 pl-4"><p>(1) $a+b = -2$.</p><p>(2) Turunan $P'(x)$ memiliki akar di $x=-2$.</p></div>
+                </div>
+            </div>
+
+            <!-- Tipe 2: Pilihan Ganda Kompleks -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-4">Tipe 2: Pilihan Ganda Kompleks</h3>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">16. Diketahui polinomial $P(x) = x^4 - 2x^3 - 13x^2 + 14x + 24 = 0$. Manakah pernyataan yang benar mengenai akar-akar dari $P(x)$? <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. Jumlah akar-akarnya adalah 2.</div><div class="option">B. Hasil kali akar-akarnya adalah 24.</div><div class="option">C. Memiliki 4 akar bilangan bulat.</div><div class="option">D. Jumlah kuadrat semua akarnya adalah 30.</div><div class="option">E. Polinomial ini habis dibagi $(x^2-x-6)$.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">17. Polinomial $P(x)$ memenuhi hubungan $P(x^2) = x^4 P(x+1)$ untuk semua $x \in \mathbb{R}$. Jika $P(1)=3$, maka manakah pernyataan berikut yang benar? <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $P(x)$ adalah polinomial konstan.</div><div class="option">B. $P(0) = 0$.</div><div class="option">C. $P(4) = 48$.</div><div class="option">D. Derajat $P(x)$ adalah 4.</div><div class="option">E. $P(x)$ tidak dapat ditentukan.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">18. Persamaan $x^3 - x^2 + ax - 6 = 0$ dan $x^2 - 2x + b = 0$ memiliki dua akar persekutuan. Jika $a$ dan $b$ adalah bilangan real, manakah pernyataan berikut yang benar? <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $b = -3$.</div><div class="option">B. Akar persekutuannya adalah $x=-1$ dan $x=3$.</div><div class="option">C. $a = 5$.</div><div class="option">D. Akar ketiga dari polinomial orde 3 adalah $x=2$.</div><div class="option">E. Nilai $a+b = 2$.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">19. Diberikan polinomial $P(x)=x^4+4$. Manakah di antara berikut ini yang merupakan faktor dari $P(x)$ dengan koefisien real? <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $(x^2+2)$</div><div class="option">B. $(x^2-2)$</div><div class="option">C. $(x^2+2x+2)$</div><div class="option">D. $(x^2-2x+2)$</div><div class="option">E. $P(x)$ <strong>TIDAK</strong> dapat difaktorkan atas bilangan real.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">20. Polinomial $P(x)$ berderajat 4 memiliki koefisien $x^4$ bernilai 1. Polinomial tersebut memiliki akar kembar di $x=1$ dan akar kembar lainnya di $x=-2$. Pernyataan yang benar adalah... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $P(x) = x^4+2x^3-3x^2-4x+4$.</div><div class="option">B. $P(0) = 4$.</div><div class="option">C. Sisa pembagian $P(x)$ oleh $(x-2)$ adalah 16.</div><div class="option">D. Turunan pertama $P'(x)$ memiliki akar di $x=1$ dan $x=-2$.</div><div class="option">E. Sisa pembagian $P(x)$ oleh $(x+1)$ adalah 4.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">21. Jika $P(x) = ax^4+bx^3+cx^2+dx+e$ habis dibagi $(x^2+1)$, maka... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $a-c+e=0$</div><div class="option">B. $b=d$</div><div class="option">C. $a+b+c+d+e=0$</div><div class="option">D. $b-d=0$</div><div class="option">E. $e=c-a$</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">22. Polinomial $P(x)$ memberikan sisa $2x-5$ jika dibagi $x^2-1$ dan memberikan sisa $3x+1$ jika dibagi $x^2-4$. Pernyataan berikut yang benar adalah... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. $P(1) = -3$</div><div class="option">B. $P(-2) = -5$</div><div class="option">C. Sisa pembagian $P(x)$ oleh $(x-2)$ adalah 7.</div><div class="option">D. $P(1)+P(-1)+P(2)+P(-2) = -8$.</div><div class="option">E. $P(0)$ <strong>TIDAK</strong> dapat ditentukan dari informasi yang diberikan.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">23. Diketahui polinomial $P(x) = x^4 + ax^3 + bx^2 + cx + d$. Jika $P(1)=P(2)=P(3)=0$ dan sisa pembagian $P(x)$ oleh $(x-4)$ adalah 6, maka pernyataan yang benar adalah... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. Akar keempatnya adalah $x=0$.</div><div class="option">B. Nilai $d=6$.</div><div class="option">C. $a=-6$.</div><div class="option">D. Sisa pembagian $P(x)$ oleh $x$ adalah 0.</div><div class="option">E. $a+b+c+d=0$.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">24. Jika polinomial $P(x)$ dan $Q(x)$ keduanya berderajat 4 dengan koefisien utama yang sama, maka $P(x)-Q(x)$... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. <strong>TIDAK</strong> mungkin berderajat 4.</div><div class="option">B. Mungkin berderajat 3.</div><div class="option">C. Mungkin berderajat 2.</div><div class="option">D. Mungkin merupakan konstanta.</div><div class="option">E. <strong>BUKAN</strong> pasti polinomial nol.</div></div>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-4">25. Diketahui $P(x) = x^4 - 8x^3 + 23x^2 - 28x + 12$. Pernyataan yang benar tentang akar-akar $P(x)$ adalah... <b>(bisa pilih lebih dari satu jawaban)</b></p>
+                    <div class="options-grid"><div class="option">A. Memiliki akar kembar $x=2$.</div><div class="option">B. Jumlah akar-akarnya adalah 8.</div><div class="option">C. Hasil kali akar-akarnya adalah 12.</div><div class="option">D. Semua akarnya adalah bilangan real positif.</div><div class="option">E. Memiliki faktor $(x-1)$ dan $(x-3)$.</div></div>
+                </div>
+            </div>
+
+            <!-- Tipe 3: Benar/Salah -->
+            <div class="mb-12">
+                 <h3 class="text-xl font-bold mb-4">Tipe 3: Pilihan Ganda Kompleks (Kategori Benar/Salah)</h3>
+                 <div class="question-card">
+                    <p class="font-semibold mb-3">Gunakan informasi berikut untuk menjawab soal nomor 26-28.<br>Diketahui polinomial $P(x) = x^4 - 4x^3 + 3x^2 + 4x - 4$. Diketahui pula bahwa $(x-1)$ dan $(x-2)$ adalah faktor-faktor dari $P(x)$.</p>
+                 </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-3">26. Berdasarkan informasi $P(x)$, tentukan kebenaran pernyataan berikut.</p>
+                     <table class="table-auto w-full mt-4"><thead><tr><th class="w-3/4">Pernyataan</th><th>Benar / Salah</th></tr></thead>
+                     <tbody>
+                         <tr><td>A. $P(x)$ habis dibagi oleh $(x^2-3x+2)$.</td><td></td></tr>
+                         <tr><td>B. Akar-akar lainnya dari $P(x)$ adalah $-1$ dan $2$.</td><td></td></tr>
+                         <tr><td>C. Terdapat satu akar kembar (multiplisitas 2).</td><td></td></tr>
+                         <tr><td>D. Jumlah semua akar dari $P(x)$ adalah $-4$.</td><td></td></tr>
+                     </tbody></table>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-3">27. Tentukan kebenaran pernyataan lanjutan mengenai $P(x)$ berikut.</p>
+                     <table class="table-auto w-full mt-4"><thead><tr><th class="w-3/4">Pernyataan</th><th>Benar / Salah</th></tr></thead>
+                     <tbody>
+                         <tr><td>A. Sisa pembagian $P(x)$ oleh $(x+1)$ adalah $-6$.</td><td></td></tr>
+                         <tr><td>B. Kurva $y=P(x)$ memotong sumbu-y di $(0, -4)$.</td><td></td></tr>
+                         <tr><td>C. $P(x)$ dapat ditulis sebagai $(x^2-3x+2)(x^2-x-2)$.</td><td></td></tr>
+                         <tr><td>D. Turunan $P'(x)$ habis dibagi $(x-2)$.</td><td></td></tr>
+                     </tbody></table>
+                </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-3">28. Didefinisikan polinomial baru $Q(x) = \frac{P(x)}{x-1}$. Tentukan kebenaran pernyataan mengenai $Q(x)$.</p>
+                     <table class="table-auto w-full mt-4"><thead><tr><th class="w-3/4">Pernyataan</th><th>Benar / Salah</th></tr></thead>
+                     <tbody>
+                         <tr><td>A. $Q(x) = x^3 - 3x^2 + 4$.</td><td></td></tr>
+                         <tr><td>B. $Q(x)$ memiliki sebuah akar di $x=-1$.</td><td></td></tr>
+                         <tr><td>C. $Q(2)=0$.</td><td></td></tr>
+                         <tr><td>D. Sisa pembagian $Q(x)$ oleh $(x-3)$ adalah 4.</td><td></td></tr>
+                     </tbody></table>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">Gunakan informasi berikut untuk menjawab soal nomor 29-30.<br>Polinomial $P(x)$ berderajat 3 dengan koefisien utama 2. Polinomial $P(x)$ habis dibagi $(x+2)$ dan memberikan sisa yang sama jika dibagi oleh $(x-1)$ atau $(x-2)$.</p>
+                 </div>
+                 <div class="question-card">
+                    <p class="font-semibold mb-3">29. Misalkan sisa yang sama tersebut adalah $S$. Tentukan kebenaran pernyataan berikut.</p>
+                     <table class="table-auto w-full mt-4"><thead><tr><th class="w-3/4">Pernyataan</th><th>Benar / Salah</th></tr></thead>
+                     <tbody>
+                         <tr><td>A. $P(1)=P(2)$.</td><td></td></tr>
+                         <tr><td>B. $P(x)$ dapat ditulis dalam bentuk $2(x-1)(x-2)(x-k) + S$ untuk suatu konstanta $k$.</td><td></td></tr>
+                         <tr><td>C. $P(x)-S$ memiliki faktor $(x-1)$ dan $(x-2)$.</td><td></td></tr>
+                         <tr><td>D. $P(-2)=0$.</td><td></td></tr>
+                     </tbody></table>
+                </div>
+                <div class="question-card">
+                    <p class="font-semibold mb-3">30. Diketahui juga bahwa sisa pembagian $P(x)$ oleh $x$ adalah 12. Tentukan kebenaran pernyataan berikut.</p>
+                     <table class="table-auto w-full mt-4"><thead><tr><th class="w-3/4">Pernyataan</th><th>Benar / Salah</th></tr></thead>
+                     <tbody>
+                         <tr><td>A. Sisa pembagiannya adalah $S=12$.</td><td></td></tr>
+                         <tr><td>B. Bentuk lengkap $P(x) = 2x^3 - 5x^2 - 4x + 12$.</td><td></td></tr>
+                         <tr><td>C. $P(1) = 5$.</td><td></td></tr>
+                         <tr><td>D. Jumlah akar-akar dari $P(x)=0$ adalah 2.5.</td><td></td></tr>
+                     </tbody></table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
+
